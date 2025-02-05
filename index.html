@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncie seu Apartamento de forma rápida</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre seu Apartamento para vender mais rápido!</h3>  
+        </div>
+
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-tittle">Venda fácil seu Apartamento!</h1>
+                <P>Descreva a característica e marque os opcionais que o Condomínio possui</P>
+                <form>
+
+                    <div class="box-input">
+                        <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                        <input type="text" name="title" id="title" class="block" placeholder="Um título para anunciar seu apartamento" minlength="1" maxlength="30" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="price">Preço<span class="required-field">*</span></label>
+                        <input type="number" name="price" id="price" class="block" placeholder="Digite o preço" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="description">Descrição<span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block" placeholder="Detalhes do apartamento, exemplo: se ele tem dois cômodos" required></textarea>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="brand">Endereço<span class="required-field">*</span></label>
+                        <input type="text" name="brand" id="brand" class="block" placeholder="Digite o Endereço do seu apartamento" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="mileage">Metragem<span class="required-field">*</span></label>
+                        <input type="number" name="mileage" id="mileage" class="block" placeholder="Digite a Metragem do apartamento" required />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="purchase_date">Data do Anúncio <span class="required-field">*</span></label>
+                        <input type="date" name="purchase_date" id="purchase_date" class="block" required />
+                    </div>
+
+                    <div class="box-input">
+                        <p>Apartamento possui sacada:<span class="required-field">*</span> </p>
+                        <input type="radio" id="sim" name="gear" value="sim" required />
+                        <label for="Sim">Sim</label>
+                        <input type="radio" id="não" name="gear" value="não" required />
+                        <label for="não">Não</label>
+                    </div>
+
+                    <div class="optional-box">
+                        <p>opcionais</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="quadra" name="optional[]" value="quadra">
+                                <label for="quadra">Quadra</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="portaria" name="optional[]" value="portaria">
+                                <label for="portaria"> Portaria </label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="piscina" name="optional[]" value="piscina">
+                                <label for="piscina">Piscina</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="sj" name="optional[]" value="sj">
+                                <label for="sj">Sala de Jogos</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="sf" name="optional[]" value="sf">
+                                <label for="sf">Salão de Festa</label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="academia" name="optional[]" value="academia">
+                                <label for="academia">Academia</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="mc" name="optional[]" value="mc">
+                                <label for="mc">Mercadinho </label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="feira" name="optional[]" value="feira">
+                                <label for="feira">feira</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="estacionamento" name="optional[]" value="estacionamento">
+                                <label for="estacionamento">Estacionamento </label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="pg" name="optional[]" value="pg">
+                                <label for="pg">Playground</label>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="box-input">
+                        <p>
+                            Fotos do Apartamento <span class="required-field">*</span>
+                        </p>
+                            <input type="file" 
+                             multiple accept="image/png,image/jpg" 
+                             id="images" 
+                             name="images"
+                             required
+                             />
+                    </div>
+
+                    <input type="submit" name="Enviar" value="Enviar" class="btn-submit"/>
+                    <input type="submit" name="Limpar" value="Limpar" class="btn-submit"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
